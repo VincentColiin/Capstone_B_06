@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/avTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:text="First Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/avEditFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="James"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/avTextView4"
+        app:layout_constraintTop_toBottomOf="@+id/avTextView4" />
+
+    <TextView
+        android:id="@+id/avTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Last Name"
+        app:layout_constraintStart_toStartOf="@+id/avEditFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/avEditFirstName" />
+
+    <EditText
+        android:id="@+id/avEditLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Smith"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/avTextView5"
+        app:layout_constraintTop_toBottomOf="@+id/avTextView5" />
+
+    <TextView
+        android:id="@+id/avTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="@+id/avEditLastName"
+        app:layout_constraintTop_toBottomOf="@+id/avEditLastName" />
+
+    <EditText
+        android:id="@+id/avEditEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email@gmail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/avTextView"
+        app:layout_constraintTop_toBottomOf="@+id/avTextView" />
+
+    <TextView
+        android:id="@+id/avTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="@+id/avEditEmail"
+        app:layout_constraintTop_toBottomOf="@+id/avEditEmail" />
+
+    <EditText
+        android:id="@+id/avEditPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+
+        app:layout_constraintStart_toStartOf="@+id/avTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/avTextView2" />
+
+    <TextView
+        android:id="@+id/avTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Confirm Password"
+        app:layout_constraintStart_toStartOf="@+id/avEditPassword"
+        app:layout_constraintTop_toBottomOf="@+id/avEditPassword" />
+
+    <EditText
+        android:id="@+id/avEditRePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="re-type password"
+        android:inputType="textPassword"
+
+        app:layout_constraintStart_toStartOf="@+id/avEditPassword"
+        app:layout_constraintTop_toBottomOf="@+id/avTextView3" />
+
+    <Button
+        android:id="@+id/avRegisButton"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avEditRePassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
