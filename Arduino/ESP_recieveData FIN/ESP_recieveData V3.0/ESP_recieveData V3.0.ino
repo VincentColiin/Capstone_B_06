@@ -7,8 +7,8 @@
 uint32_t tsLastReport = 0;
 SoftwareSerial uno(D1,D2);
 ESP8266WebServer server;
-char* ssid = "VC";
-char* password = "ctyj7080";
+char* ssid = "nama_wifi";
+char* password = "pass_wifi";
 
 char data;
 String dataReceived;
